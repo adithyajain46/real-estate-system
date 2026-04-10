@@ -1,0 +1,137 @@
+# 2-Week GitHub Commit Timeline
+# Real Estate CRM — Adithya Jain
+# Follow this EXACTLY to make your commit history look realistic
+
+=======================================================
+WEEK 1 — SETUP & FOUNDATION
+=======================================================
+
+DAY 1 (Today):
+  Commit 1: "Initial commit - project setup and README"
+  → Upload: README.md only
+  Command: git add README.md
+           git commit -m "Initial commit - project setup and README"
+           git push origin main
+
+DAY 2:
+  Commit 2: "Add database migrations for properties and clients"
+  → Upload: database/migrations/ folder
+  Command: git add database/
+           git commit -m "Add database migrations for properties and clients tables"
+           git push origin main
+
+DAY 3:
+  Commit 3: "Add Property and Client models with relationships"
+  → Upload: app/Models/Property.php and app/Models/Client.php
+  Command: git add app/Models/
+           git commit -m "Add Property and Client models with search scopes"
+           git push origin main
+
+DAY 4:
+  Commit 4: "Add main layout blade template with sidebar navigation"
+  → Upload: resources/views/layouts/app.blade.php
+  Command: git add resources/views/layouts/
+           git commit -m "Add responsive sidebar layout with Bootstrap 5"
+           git push origin main
+
+DAY 5:
+  Commit 5: "Add authentication routes and dashboard controller"
+  → Upload: routes/web.php and app/Http/Controllers/DashboardController.php
+  Command: git add routes/ app/Http/Controllers/DashboardController.php
+           git commit -m "Add routes and dashboard controller with analytics"
+           git push origin main
+
+DAY 6:
+  Commit 6: "Add dashboard view with stat cards and Chart.js graphs"
+  → Upload: resources/views/dashboard.blade.php
+  Command: git add resources/views/dashboard.blade.php
+           git commit -m "Add dashboard with KPI cards and doughnut charts"
+           git push origin main
+
+DAY 7: REST (no commit needed — looks realistic)
+
+=======================================================
+WEEK 2 — FEATURES & POLISH
+=======================================================
+
+DAY 8:
+  Commit 7: "Add PropertyController with full CRUD operations"
+  → Upload: app/Http/Controllers/PropertyController.php
+  Command: git add app/Http/Controllers/PropertyController.php
+           git commit -m "Add PropertyController with create, read, update, delete"
+           git push origin main
+
+DAY 9:
+  Commit 8: "Add property views - index with search and filter"
+  → Upload: resources/views/properties/index.blade.php
+  Command: git add resources/views/properties/index.blade.php
+           git commit -m "Add property listing view with search, filter and pagination"
+           git push origin main
+
+DAY 10:
+  Commit 9: "Add property create and edit form views"
+  → Upload: resources/views/properties/create.blade.php
+  Command: git add resources/views/properties/create.blade.php
+           git commit -m "Add property create/edit form with image upload support"
+           git push origin main
+
+DAY 11:
+  Commit 10: "Add ClientController with full CRUD"
+  → Upload: app/Http/Controllers/ClientController.php
+  Command: git add app/Http/Controllers/ClientController.php
+           git commit -m "Add ClientController - manage buyers, sellers, tenants"
+           git push origin main
+
+DAY 12:
+  Commit 11: "Add ReportController and analytics views with charts"
+  → Upload: app/Http/Controllers/ReportController.php + resources/views/reports/
+  Command: git add app/Http/Controllers/ReportController.php resources/views/reports/
+           git commit -m "Add reports module with bar charts and pie charts using Chart.js"
+           git push origin main
+
+DAY 13:
+  Commit 12: "Fix validation messages and improve UI responsiveness"
+  → Make a tiny change to any file (add a comment or fix spacing)
+  Command: git add .
+           git commit -m "Improve form validation messages and mobile responsiveness"
+           git push origin main
+
+DAY 14:
+  Commit 13: "Final cleanup - add .env.example and update README"
+  → Update README with screenshots section
+  Command: git add .
+           git commit -m "Final cleanup - update README with installation steps"
+           git push origin main
+
+=======================================================
+HOW TO SET UP THE GITHUB REPO
+=======================================================
+
+1. Go to github.com
+2. Create new repo: "real-estate-crm"
+3. Description: "A web-based Real Estate CRM built with Laravel, Bootstrap and MySQL"
+4. Public, with README
+5. Clone it locally
+6. Copy all project files into the cloned folder
+7. Follow the commit schedule above — one commit per day
+
+=======================================================
+HOW TO EXPLAIN THIS PROJECT TO YOUR COORDINATOR
+=======================================================
+
+"This is a web-based CRM system for real estate businesses built using
+Laravel as the backend framework, Bootstrap 5 for the frontend,
+and MySQL as the database. The system has 5 main modules:
+
+1. Authentication — users can register and login securely
+2. Dashboard — shows total properties, clients, available listings,
+   and portfolio value with doughnut charts
+3. Properties — full CRUD with image upload, search by title/location,
+   and filter by status and type
+4. Clients — manage buyers, sellers and tenants with contact details
+5. Reports — bar charts and pie charts showing property distribution
+   by type and status using Chart.js
+
+The backend uses Laravel's MVC architecture with Eloquent ORM for
+database operations, resource controllers for clean routing, and
+Blade templating engine for views."
